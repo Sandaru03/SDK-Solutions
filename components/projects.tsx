@@ -23,7 +23,7 @@ export default function Projects() {
       image: "/images/shoe.jpg  ",
       gradient: "from-purple-500/20 to-pink-500/20",
       category: "E-commerce",
-      link: "https://hype-walk-front-end.vercel.app/"
+      link: "https://hype-walk.vercel.app/"
     },
     {
       title: "KR Motors",
