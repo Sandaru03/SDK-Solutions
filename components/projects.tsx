@@ -38,7 +38,7 @@ export default function Projects() {
       title: "To-Do List Web Application",
       description: "A smart productivity app that combines task management with machine learning insights. Users can create, organize, and track tasks efficiently, while AI-driven analytics provide personalized productivity trends and visual reports using interactive D3.js charts.",
       tags: ["Reactjs", "TailwindCSS","Boostrap","Nodejs","MongoDB"],
-      image: "/images/todo.png",
+      image: "/images/Todolistimg.png",
       gradient: "from-cyan-500/20 to-blue-500/20",
       category: "To-Do Application",
       link: "https://to-do-list-frontend-weld-nine.vercel.app/"
