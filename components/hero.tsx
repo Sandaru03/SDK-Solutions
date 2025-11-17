@@ -124,14 +124,20 @@ export default function Hero({ isDark }: HeroProps) {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-0.1 animate-fade-in-up animation-delay-400">
-            <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
-              Get Started
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 text-white">
-              Learn More
-            </button>
-          </div>
+          <a href="#contact" >
+          <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+          Get Started
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+          </a>
+
+  <a href="#projects">
+    <button className="cursor-pointer px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 text-white">
+      Learn More
+    </button>
+  </a>
+</div>
+
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 pt-0.1 animate-fade-in-up animation-delay-100000">

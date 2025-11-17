@@ -11,7 +11,7 @@ export default function Projects() {
       title: "Micro CCTV Sequrity Solution",
       description: "Micro CCTV is a professional CCTV service platform developed using the MERN (MongoDB, Express, React, Node.js) stack. It offers live camera feeds, package booking, and a customer-friendly dashboard.",
       tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
-      image: "/images/MICROCCTV.png",
+      image: "/images/MCCTV.png",
       gradient: "from-blue-500/20 to-purple-500/20",
       category: "E-commerce",
       link: "https://www.microcctvsecuritysolutions.store/"
@@ -23,23 +23,25 @@ export default function Projects() {
       image: "/images/shoe.jpg  ",
       gradient: "from-purple-500/20 to-pink-500/20",
       category: "E-commerce",
-      link: "https://www.microcctvsecuritysolutions.store/"
+      link: "https://hype-walk.vercel.app/"
     },
     {
-      title: "Real-time Collaboration Tool",
-      description: "WebSocket-based tool enabling teams to collaborate seamlessly in real-time.",
-      tags: ["Vue.js", "Firebase", "WebSocket", "TailwindCSS"],
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80",
+      title: "KR Motors",
+      description: "KR Motors is a full-featured vehicle management and sales platform developed with the MERN stack (MongoDB, Express, React, Node.js). It includes vehicle listings, customer inquiries, service booking, and an admin dashboard for inventory and sales tracking.",
+      tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
+      image: "/images/KR.jpg",
       gradient: "from-pink-500/20 to-rose-500/20",
-      category: "SaaS"
+      category: "E-commerce",
+      link: "https://kr-motors-fe.vercel.app/"
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Machine learning-driven insights with interactive visualizations.",
-      tags: ["Python", "TensorFlow", "React", "D3.js"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80",
+      title: "To-Do List Web Application",
+      description: "A smart productivity app that combines task management with machine learning insights. Users can create, organize, and track tasks efficiently, while AI-driven analytics provide personalized productivity trends and visual reports using interactive D3.js charts.",
+      tags: ["Reactjs", "TailwindCSS","Boostrap","Nodejs","MongoDB"],
+      image: "/images/Todolistimg.png",
       gradient: "from-cyan-500/20 to-blue-500/20",
-      category: "AI/ML"
+      category: "To-Do Application",
+      link: "https://to-do-list-frontend-weld-nine.vercel.app/"
     },
   ]
 

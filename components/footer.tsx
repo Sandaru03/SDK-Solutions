@@ -26,9 +26,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">V</span>
-              </div>
+              <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110">
+          <img src="/SDK.png" alt="SDK Logo" className="w-full h-full object-cover" />
+          </div>
               <span className="font-bold text-lg">SDK Solutions</span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -79,7 +79,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <input
               type="email"
               placeholder="Enter your email"
@@ -88,7 +88,7 @@ export default function Footer() {
             <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
               <Mail className="w-4 h-4" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
