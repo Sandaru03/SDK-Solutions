@@ -6,10 +6,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, label: "Facebook" },
-    { icon: <Twitter className="w-5 h-5" />, label: "Twitter" },
-    { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn" },
-    { icon: <Github className="w-5 h-5" />, label: "GitHub" },
+{ icon: <Facebook className="w-5 h-5" />, label: "Facebook", url: "https://www.facebook.com/share/1M5nmWsDmR/?mibextid=wwXIfr" },    
+// { icon: <Twitter className="w-5 h-5" />, label: "Twitter" },
+    // { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn" },
+    // { icon: <Github className="w-5 h-5" />, label: "GitHub" },
   ]
 
   const footerLinks = [
@@ -68,7 +68,7 @@ export default function Footer() {
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={link.url}
                   className="p-2 rounded-lg bg-muted text-muted-foreground hover:text-foreground hover:bg-primary/20 transition-all duration-200"
                   aria-label={link.label}
                 >
