@@ -16,6 +16,16 @@ export default function Projects() {
       category: "E-commerce",
       link: "https://www.microcctvsecuritysolutions.store/"
     },
+
+     {
+      title: "SDK Travels & Tours",
+      description: "SDK Travels is a modern travel and tour booking platform developed using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to explore Sri Lanka tour packages, accommodations, and make online bookings through a user-friendly dashboard.",
+      tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
+      image: "/images/sdktravells.png",
+      gradient: "from-blue-500/20 to-purple-500/20",
+      category: "Travel & Tourism",
+      link: "https://sdk-travels-frontend.vercel.app/"
+    },
     {
       title: "HypeWalk Shoe Store",
       description: "HypeWalk is a modern e-commerce platform for sneaker enthusiasts, built with the MERN stack (MongoDB, Express, React, Node.js). It features product browsing, secure checkout, order tracking, and an interactive user dashboard.",
@@ -155,12 +165,12 @@ export default function Projects() {
 
         {/* View All Button */}
         <div className="text-center mt-16 animate-fade-in-up animation-delay-600">
-          <button className="group px-8 py-4 rounded-lg border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 font-semibold">
+          {/* <button className="group px-8 py-4 rounded-lg border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 font-semibold">
             <span className="flex items-center gap-2">
               View All Projects
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
             </span>
-          </button>
+          </button> */}
         </div>
       </div>
 
