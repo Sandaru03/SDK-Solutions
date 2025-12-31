@@ -26,6 +26,17 @@ export default function Projects() {
       category: "Travel & Tourism",
       link: "https://sdk-travels-frontend.vercel.app/"
     },
+
+    {
+      title: "PFP Frontend Developmnent",
+      description: "PFP Frontend Development is a modern, responsive web interface built using React.js and Tailwind CSS. It focuses on clean UI design, smooth user experience, and performance optimization, delivering a visually appealing and user-friendly frontend solution suitable for marketing and business platforms.",
+      tags: ["Reactjs", "TailwindCSS"],
+      image: "/images/pfp.png  ",
+      gradient: "from-purple-500/20 to-pink-500/20",
+      category: "Marketing",
+      link: "https://sdk-solution-pfp-frontend-developme.vercel.app/"
+    },
+
     {
       title: "HypeWalk Shoe Store",
       description: "HypeWalk is a modern e-commerce platform for sneaker enthusiasts, built with the MERN stack (MongoDB, Express, React, Node.js). It features product browsing, secure checkout, order tracking, and an interactive user dashboard.",
