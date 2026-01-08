@@ -37,6 +37,16 @@ export default function Projects() {
       link: "https://sdk-solution-pfp-frontend-developme.vercel.app/"
     },
 
+     {
+      title: "Tailor Shop Website(Under Development Yet)",
+      description: "Tailor Shop Website is a modern and responsive web platform designed for tailoring businesses. Built using React.js and Tailwind CSS, the website includes an online booking system for appointments and a digital measurement system that allows customers to submit their body measurements online. It focuses on a clean UI, smooth user experience, and efficient workflow management, making it ideal for professional tailor shops and fashion brands.",
+      tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
+      image: "/images/tailors.png  ",
+      gradient: "from-blue-500/20 to-purple-500/20",
+      category: "Business",
+      link: "https://tailor-shop-website-front-end.vercel.app/"
+    },
+
     {
       title: "HypeWalk Shoe Store",
       description: "HypeWalk is a modern e-commerce platform for sneaker enthusiasts, built with the MERN stack (MongoDB, Express, React, Node.js). It features product browsing, secure checkout, order tracking, and an interactive user dashboard.",
