@@ -17,15 +17,26 @@ export default function Projects() {
       link: "https://www.microcctvsecuritysolutions.store/"
     },
 
+   {
+     title: "Anchorway Services",
+     description: "Anchorway Services is a professional cleaning services platform based in Australia. The system is designed to showcase residential and commercial cleaning services, allow customers to request quotes, book services online, and manage inquiries through a simple and clean dashboard experience.",
+     tags: ["Reactjs", "TailwindCSS"],
+     image: "/images/anchorway.png",
+     gradient: "from-pink-500/20 to-rose-500/20",
+     category: "Cleaning Services",
+     link: "https://www.anchorwayservices.com"
+   },
+
      {
       title: "SDK Travels & Tours",
       description: "SDK Travels is a modern travel and tour booking platform developed using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to explore Sri Lanka tour packages, accommodations, and make online bookings through a user-friendly dashboard.",
       tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
       image: "/images/sdktravells.png",
-      gradient: "from-blue-500/20 to-purple-500/20",
+      gradient: "from-purple-500/20 to-pink-500/20",
       category: "Travel & Tourism",
       link: "https://sdk-travels-frontend.vercel.app/"
     },
+
 
     {
       title: "PFP Frontend Developmnent",
@@ -45,6 +56,16 @@ export default function Projects() {
       gradient: "from-blue-500/20 to-purple-500/20",
       category: "Business",
       link: "https://tailor-shop-website-front-end.vercel.app/"
+    },
+
+     {
+      title: "RG Clothing",
+      description: "RG Clothing is a modern bedding and home textile e-commerce platform specializing in high-quality bedsheets and fabric products. The website allows customers to explore collections, view product details, and place online orders through a smooth and user-friendly shopping experience.",
+      tags: ["Reactjs", "TailwindCSS", "Typescript","Nextjs"],
+      image: "/images/bedsheet.png  ",
+      gradient: "from-purple-500/20 to-pink-500/20",
+      category: "Fashion & Textiles",
+      link: "https://rg-clothing-website.vercel.app/"
     },
 
     {
@@ -92,7 +113,7 @@ export default function Projects() {
             <span className="text-sm font-medium">Our Work</span>
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 via-purple-600 to-pink-600">
               Featured Projects
             </span>
           </h2>
@@ -112,7 +133,7 @@ export default function Projects() {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Gradient Overlay Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              <div className={`absolute inset-0 bg-linear-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
               {/* Project Image */}
               <div className="relative h-72 overflow-hidden">
@@ -122,7 +143,7 @@ export default function Projects() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent"></div>
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold">
@@ -130,13 +151,13 @@ export default function Projects() {
                 </div>
 
                 {/* Hover Overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/90 to-transparent transition-opacity duration-300 ${hoveredIndex === index ? 'opacity-100' : 'opacity-0'}`}></div>
+                <div className={`absolute inset-0 bg-linear-to-t from-black/90 to-transparent transition-opacity duration-300 ${hoveredIndex === index ? 'opacity-100' : 'opacity-0'}`}></div>
               </div>
 
               {/* Project Content */}
               <div className="relative p-6 space-y-4">
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-2xl font-bold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                  <h3 className="text-2xl font-bold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
                     {project.title}
                   </h3>
                   <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -172,15 +193,15 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"               
                   rel="noopener noreferrer"     
-                  className="group/btn relative inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 mt-4">
+                  className="group/btn relative inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 mt-4">
          <span className="relative z-10">View Project</span>
         <ArrowUpRight className="relative z-10 w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-purple-600 to-pink-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
          </a>
               </div>
 
               {/* Decorative Corner */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-blue-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           ))}
         </div>

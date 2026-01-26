@@ -49,7 +49,7 @@ export default function About() {
             <span className="text-sm font-medium">About Us</span>
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 via-purple-600 to-pink-600">
               About SDK Solutions
             </span>
           </h2>
@@ -68,7 +68,7 @@ export default function About() {
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Our team of experienced developers, designers, and strategists work together to deliver solutions that are
-                not just functional, but truly <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">transformative</span>.
+                not just functional, but truly <span className="font-semibold text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">transformative</span>.
               </p>
             </div>
 
@@ -89,7 +89,7 @@ export default function About() {
             </div>
 
             <a href="#features">
-  <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+  <button className="cursor-pointer group px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
     Explore Our Story
     <svg
       className="w-5 h-5 group-hover:translate-x-1 transition-transform"
@@ -113,7 +113,7 @@ export default function About() {
                   alt="Team collaboration"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 group-hover:opacity-0 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 group-hover:opacity-0 transition-opacity duration-500"></div>
               </div>
 
               {/* Small Images */}
@@ -123,7 +123,7 @@ export default function About() {
                   alt="Office workspace"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 group-hover:opacity-0 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-blue-600/20 to-purple-600/20 group-hover:opacity-0 transition-opacity duration-500"></div>
               </div>
 
               <div className="relative h-48 rounded-2xl overflow-hidden group">
@@ -132,14 +132,14 @@ export default function About() {
                   alt="Modern office"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20 group-hover:opacity-0 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-purple-600/20 to-pink-600/20 group-hover:opacity-0 transition-opacity duration-500"></div>
               </div>
             </div>
 
             {/* Floating Badge */}
             <div className="absolute -top-4 -right-4 px-6 py-3 bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-border animate-float">
               <p className="text-sm text-muted-foreground">Trusted by</p>
-              <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <p className="text-2xl font-bold text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">
                 30+ Clients
               </p>
             </div>
@@ -157,12 +157,12 @@ export default function About() {
             >
               {/* Gradient Background on Hover */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
+                className={`absolute inset-0 bg-linear-to-br ${value.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
               ></div>
 
               {/* Animated Border */}
               <div
-                className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${value.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                className={`absolute inset-0 rounded-2xl bg-linear-to-br ${value.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                 style={{ padding: "2px" }}
               >
                 <div className="w-full h-full bg-background rounded-2xl"></div>
@@ -171,19 +171,19 @@ export default function About() {
               <div className="relative z-10">
                 {/* Icon */}
                 <div
-                  className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${value.gradient} mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
+                  className={`inline-flex p-3 rounded-xl bg-linear-to-br ${value.gradient} mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
                 >
                   <div className="text-white">{value.icon}</div>
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
                   {value.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">{value.description}</p>
 
                 {/* Hover Arrow */}
-                <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Learn more
                   <svg
                     className="w-4 h-4 group-hover:translate-x-1 transition-transform"

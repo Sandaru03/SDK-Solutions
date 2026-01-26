@@ -61,7 +61,7 @@ export default function Header({ isDark, onToggleTheme }: HeaderProps) {
             >
               {item}
               <span
-                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300`}
+                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300`}
               ></span>
             </a>
           ))}

@@ -88,7 +88,7 @@ export default function Hero({ isDark }: HeroProps) {
           >
             <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/50"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-purple-900/40 to-pink-900/40"></div>
+            <div className="absolute inset-0 bg-linear-to-br from-blue-900/40 via-purple-900/40 to-pink-900/40"></div>
           </div>
         ))}
       </div>
@@ -125,7 +125,7 @@ export default function Hero({ isDark }: HeroProps) {
         {/* CTA Buttons */}
 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-0.1 animate-fade-in-up animation-delay-400">
   <a href="#contact">
-    <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+    <button className="cursor-pointer group px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
       Get Started
       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
     </button>
@@ -160,19 +160,19 @@ export default function Hero({ isDark }: HeroProps) {
       {/* Navigation Arrows (hidden on mobile) */}
       <button
         onClick={prevSlide}
-        className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 group z-20"
+        className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center hover:bg-white/20 transition-all duration-300 group z-20"
       >
         <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
       </button>
       <button
         onClick={nextSlide}
-        className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 group z-20"
+        className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center hover:bg-white/20 transition-all duration-300 group z-20"
       >
         <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
       </button>
 
       {/* Dots Indicator */}
-<div className="hidden sm:flex absolute bottom-1 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+<div className="hidden sm:flex absolute bottom-1 left-1/2 -translate-x-1/2 gap-3 z-20">
   {slides.map((_, index) => (
     <button
       key={index}

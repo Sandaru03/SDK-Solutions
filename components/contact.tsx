@@ -82,13 +82,13 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-20 space-y-6 animate-fade-in-up">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 text-sm font-medium">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 text-sm font-medium">
             <MessageSquare className="w-4 h-4 text-blue-500" />
             Get In Touch
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
             Let's Start a{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 via-purple-600 to-pink-600">
               Conversation
             </span>
           </h2>
@@ -133,7 +133,7 @@ export default function Contact() {
                   <textarea name="message" id="message" value={formData.message} onChange={handleChange} rows={5} className="w-full px-4 py-3 rounded-lg bg-background border-2 border-border focus:border-blue-500 focus:outline-none transition-colors resize-none" />
                 </div>
 
-                <button type="submit" disabled={isSubmitting} className="cursor-pointer w-full group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 inline-flex items-center justify-center gap-2">
+                <button type="submit" disabled={isSubmitting} className="cursor-pointer w-full group px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 inline-flex items-center justify-center gap-2">
                   {isSubmitting ? "Sending..." : <>
                     Send Message <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform"/>
                   </>}
@@ -146,10 +146,10 @@ export default function Contact() {
           <div className="space-y-8 animate-fade-in-up animation-delay-400">
             {contactInfo.map((info, idx) => (
               <div key={idx} className="relative p-6 rounded-2xl bg-card border-2 border-border shadow-sm">
-                <div className={`absolute inset-0 bg-gradient-to-br ${info.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-linear-to-br ${info.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                 <div className="relative z-10 flex items-start gap-4">
-                  <div className={`flex-shrink-0 p-3 rounded-xl bg-gradient-to-br ${info.bgGradient} border-2 border-border shadow-sm`}>
-                    <div className={`bg-gradient-to-r ${info.gradient} p-1 rounded-lg text-white`}>{info.icon}</div>
+                  <div className={`shrink-0 p-3 rounded-xl bg-linear-to-br ${info.bgGradient} border-2 border-border shadow-sm`}>
+                    <div className={`bg-linear-to-r ${info.gradient} p-1 rounded-lg text-white`}>{info.icon}</div>
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-semibold text-lg mb-1">{info.title}</h4>

@@ -40,7 +40,7 @@ export default function Features() {
     <section id="features" className="relative py-24 px-4 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-muted/50">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,.05)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,.05)_1px,transparent_1px)] bg-size-[64px_64px]"></div>
       </div>
 
       {/* Animated Background Orbs */}
@@ -53,14 +53,14 @@ export default function Features() {
         {/* Header */}
         <div className="text-center mb-20 space-y-6 animate-fade-in-up">
           <div className="inline-block">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 text-sm font-medium">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 text-sm font-medium">
               <Zap className="w-4 h-4 text-blue-500" />
               Our Features
             </span>
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
             Why Choose{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 via-purple-600 to-pink-600">
               SDK Solutions
             </span>
           </h2>
@@ -80,24 +80,24 @@ export default function Features() {
               {/* Card */}
               <div className="relative h-full p-8 rounded-2xl bg-card border-2 border-border hover:border-transparent transition-all duration-500 overflow-hidden shadow-sm">
                 {/* Gradient Background on Hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-linear-to-br ${feature.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                 
                 {/* Shine Effect */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10">
                   {/* Icon Container */}
-                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.bgGradient} border-2 border-border mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-sm`}>
-                    <div className={`bg-gradient-to-r ${feature.gradient} p-1 rounded-lg`}>
+                  <div className={`inline-flex p-4 rounded-xl bg-linear-to-br ${feature.bgGradient} border-2 border-border mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-sm`}>
+                    <div className={`bg-linear-to-r ${feature.gradient} p-1 rounded-lg`}>
                       {feature.icon}
                     </div>
                   </div>
 
                   {/* Text Content */}
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
                     {feature.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -106,7 +106,7 @@ export default function Features() {
 
                   {/* Hover Arrow */}
                   <div className="mt-4 flex items-center gap-2 text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                    <span className={`bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}>
+                    <span className={`bg-linear-to-r ${feature.gradient} bg-clip-text text-transparent`}>
                       Learn more
                     </span>
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@ export default function Features() {
                 </div>
 
                 {/* Corner Glow */}
-                <div className={`absolute -top-12 -right-12 w-24 h-24 bg-gradient-to-br ${feature.gradient} rounded-full blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
+                <div className={`absolute -top-12 -right-12 w-24 h-24 bg-linear-to-br ${feature.gradient} rounded-full blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
               </div>
             </div>
           ))}
@@ -126,7 +126,7 @@ export default function Features() {
         <div className="mt-16 text-center animate-fade-in-up animation-delay-600">
           <p className="text-muted-foreground mb-6">Ready to transform your business?</p>
           <Link href="#contact">
-          <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 inline-flex items-center gap-2">
+          <button className="cursor-pointer group px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 inline-flex items-center gap-2">
            Get Started Today
           <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
