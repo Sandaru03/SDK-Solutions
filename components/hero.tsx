@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from "lucide-react"
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState, useEffect } from "react"
 
 interface HeroProps {
@@ -104,9 +104,8 @@ export default function Hero({ isDark }: HeroProps) {
       <div className="relative z-10 min-h-screen flex items-center justify-center pt-20 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 animate-fade-in">
-            <Sparkles className="w-4 h-4 text-blue-400 animate-pulse" />
-            <span className="text-sm font-medium text-white">Welcome to SDK Solutions</span>
+          <div className="inline-flex items-center gap-2 animate-fade-in">
+            <span className="text-sm font-medium text-blue-400 tracking-wider uppercase">Welcome to SDK Solutions</span>
           </div>
 
           {/* Main Heading */}
@@ -123,16 +122,16 @@ export default function Hero({ isDark }: HeroProps) {
           </p>
 
         {/* CTA Buttons */}
-<div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-0.1 animate-fade-in-up animation-delay-400">
-  <a href="#contact">
-    <button className="cursor-pointer group px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+<div className="flex flex-col sm:flex-row gap-4 justify-center sm:items-center w-full pt-1 animate-fade-in-up animation-delay-400">
+  <a href="#contact" className="block w-full sm:w-auto">
+    <button className="cursor-pointer group flex items-center justify-center gap-2 w-full sm:w-52 px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105">
       Get Started
       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
     </button>
   </a>
 
-  <a href="#projects">
-    <button className="cursor-pointer px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 text-white">
+  <a href="#projects" className="block w-full sm:w-auto">
+    <button className="cursor-pointer flex items-center justify-center w-full sm:w-52 px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 text-white">
       Learn More
     </button>
   </a>
