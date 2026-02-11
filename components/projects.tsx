@@ -7,16 +7,7 @@ export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   const projects = [
-    {
-      title: "Micro CCTV Sequrity Solution",
-      description: "Micro CCTV is a professional CCTV service platform developed using the MERN (MongoDB, Express, React, Node.js) stack. It offers live camera feeds, package booking, and a customer-friendly dashboard.",
-      tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
-      image: "/images/MCCTV.png",
-      gradient: "from-blue-500/20 to-purple-500/20",
-      category: "E-commerce",
-      link: "https://www.microcctvsecuritysolutions.store/"
-    },
-
+    
     {
       title: "IRK Innovations",
       description: "IRK Innovations is a modern engineering consultancy and global tech sourcing platform built with Next.js, TypeScript, and MongoDB. It provides electronics product design, manufacturing optimization, component sourcing, and reliable global factory connections to help businesses develop high-quality tech products efficiently.",
@@ -25,6 +16,16 @@ export default function Projects() {
       gradient: "from-purple-500/20 to-pink-500/20",
       category: "Engineering & Consultancy",
       link: "https://www.irkinnovations.com/"
+    },
+
+    {
+      title: "Micro CCTV Sequrity Solution",
+      description: "Micro CCTV is a professional CCTV service platform developed using the MERN (MongoDB, Express, React, Node.js) stack. It offers live camera feeds, package booking, and a customer-friendly dashboard.",
+      tags: ["Reactjs", "TailwindCSS", "Expressjs", "Nodejs", "MongoDB"],
+      image: "/images/MCCTV.png",
+      gradient: "from-blue-500/20 to-purple-500/20",
+      category: "E-commerce",
+      link: "https://www.microcctvsecuritysolutions.store/"
     },
 
    {
