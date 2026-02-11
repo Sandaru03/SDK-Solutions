@@ -104,9 +104,9 @@ export default function Hero({ isDark }: HeroProps) {
       <div className="relative z-10 min-h-screen flex items-center justify-center pt-20 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 animate-fade-in">
+          {/* <div className="inline-flex items-center gap-2 animate-fade-in">
             <span className="text-sm font-medium text-blue-400 tracking-wider uppercase">Welcome to SDK Solutions</span>
-          </div>
+          </div> */}
 
           {/* Main Heading */}
           <div className="space-y-4 animate-fade-in-up">
