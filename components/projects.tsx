@@ -17,6 +17,16 @@ export default function Projects() {
       link: "https://www.microcctvsecuritysolutions.store/"
     },
 
+    {
+      title: "IRK Innovations",
+      description: "IRK Innovations is a modern engineering consultancy and global tech sourcing platform built with Next.js, TypeScript, and MongoDB. It provides electronics product design, manufacturing optimization, component sourcing, and reliable global factory connections to help businesses develop high-quality tech products efficiently.",
+      tags: ["Nextjs", "TypeScript", "MongoDB", "TailwindCSS"],
+      image: "/images/irk.png",
+      gradient: "from-purple-500/20 to-pink-500/20",
+      category: "Engineering & Consultancy",
+      link: "https://www.irkinnovations.com/"
+    },
+
    {
      title: "Anchorway Services",
      description: "Anchorway Services is a professional cleaning services platform based in Australia. The system is designed to showcase residential and commercial cleaning services, allow customers to request quotes, book services online, and manage inquiries through a simple and clean dashboard experience.",
